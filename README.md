@@ -2,8 +2,7 @@
 
 A modern, responsive dark-themed developer portfolio showcasing clean software architecture, scalable backend structures, and decentralized workflows. Built with clean HTML5 semantic structures and fluid CSS layout mechanics.
 
-ℹ️ **Live Application:** [https://vishnusreevidya.github.io/vidya-portfolio/](https://vishnusreevidya.github.io/vidya-portfolio/)
-
+ℹ️ **Live Application:** [https://vishnusreevidya.github.io/My-Portfolio/]
 ---
 
 ## 🚀 Professional Overview
