@@ -14,8 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const targetStrings = [
         "Computer Science Student",
         "Cybersecurity Specialist",
-        "IoT Developer",
-        "Blockchain Enthusiast"
+        "Full-Stack Web Developer",
+        "IoT Hardware Enthusiast",
+        "Blockchain Engineer"
     ];
     let listIndex = 0;
     let characterIndex = 0;
@@ -131,8 +132,66 @@ document.addEventListener('DOMContentLoaded', () => {
         communicationForm.addEventListener('submit', (event) => {
             event.preventDefault();
             const senderName = document.getElementById('clientIdentity').value.trim();
-            alert(`Message transmission simulated successfully. Thank you, ${senderName}!`);
+            showToast(`Thank you ${senderName}! Your message was transmitted.`);
             communicationForm.reset();
         });
     }
+
+    // --- 7. Project Category Filtering Engine ---
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.showcase-card');
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const filterValue = btn.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                const category = card.getAttribute('data-category') || '';
+                if (filterValue === 'all' || category.includes(filterValue)) {
+                    card.classList.remove('filtered-out');
+                    card.style.display = 'flex';
+                } else {
+                    card.classList.add('filtered-out');
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // --- 8. Copy-to-Clipboard & Toast Feedback ---
+    function showToast(message) {
+        let toast = document.querySelector('.portfolio-toast');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.className = 'portfolio-toast';
+            document.body.appendChild(toast);
+        }
+        toast.innerHTML = `<i class="fas fa-check-circle" style="color: var(--neon-cyan); margin-right: 8px;"></i> ${message}`;
+        toast.classList.add('toast-active');
+
+        setTimeout(() => {
+            toast.classList.remove('toast-active');
+        }, 2500);
+    }
+
+    const copyButtons = document.querySelectorAll('.copy-trigger-btn');
+    copyButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const parentItem = btn.closest('.copyable-item');
+            if (parentItem) {
+                const textToCopy = parentItem.getAttribute('data-copy');
+                if (textToCopy) {
+                    navigator.clipboard.writeText(textToCopy).then(() => {
+                        showToast(`Copied to clipboard: ${textToCopy}`);
+                    }).catch(err => {
+                        console.error('Failed to copy: ', err);
+                    });
+                }
+            }
+        });
+    });
 });
