@@ -3,11 +3,12 @@
 A modern, responsive dark-themed developer portfolio showcasing clean software architecture, scalable backend structures, and decentralized workflows. Built with clean HTML5 semantic structures and fluid CSS layout mechanics.
 
 ℹ️ **Live Application:** [https://vishnusreevidya.github.io/My-Portfolio/]
+
 ---
 
 ## 🚀 Professional Overview
 
-Dynamic Computer Science student specializing in IoT, Cybersecurity, and Blockchain frameworks. Proficient in assembling full-stack environments with specialized experience in building secure backend pipelines, managing cloud assets, and designing multi-dimensional business analytics dashboards. 
+Dynamic Computer Science student specializing in IoT, Cybersecurity, and Blockchain frameworks at Vasireddy Venkatadri International Technological University (CGPA: 9.1/10.0, Institutional Gold Medalist). Proficient in assembling full-stack environments with specialized experience in building secure backend pipelines, managing cloud assets, and designing cryptographic decentralized protocols.
 
 Driven by programmatic optimization, strict architecture patterns, and implementing systemic cryptographic security solutions from day one.
 
@@ -16,38 +17,49 @@ Driven by programmatic optimization, strict architecture patterns, and implement
 ## 🛠️ Technical Stack & Capability Toolkit
 
 ### Core Ecosystem
-* **Backend Engineering:** Java, Spring Boot, Node.js, Express
-* **Smart Contracts & Web3:** Solidity, Remix IDE, Web3.js
-* **Scripting & Analytics:** Python, Structural Logic Algorithms
-* **Data Visualization:** Tableau, Power BI
-
-### DevOps & Infrastructure
-* **Build Systems:** Maven, Pip
-* **Deployment Engines:** Render Cloud, GitHub Ecosystem
-* **Security & Environments:** AWS Security Profiles, Git Version Control
+* **Blockchain & Web3:** Solidity, Ethereum / EVM, Hardhat, Ethers.js v6, IPFS, MetaMask, Smart Contracts
+* **Full-Stack & Web:** React.js, Node.js, Express.js, JavaScript, HTML5, CSS3, Tailwind CSS
+* **Databases & Cloud:** PostgreSQL, Supabase, MongoDB, Oracle Database, MySQL
+* **Cybersecurity & Tools:** AES-GCM-256, PBKDF2, JWT, Wireshark, Nmap, Metasploit, Autopsy, Git / GitHub, Docker
 
 ---
 
 ## 📂 Featured Architectures
 
-### 1. Cryptocurrency Web Application
-A secure web infrastructure engineered for compiling, processing, and monitoring cryptographic tokens. Integrates highly responsive system API endpoints with robust visual control matrices.
-* **Tech Stack:** Node.js, React, Render Cloud
+### 1. Decentralized Patient Consent Management System (PCMS)
+Enterprise-grade Web3 Electronic Health Record (EHR) access control platform engineered with Solidity smart contracts, Hardhat, React 19, and Ethers.js v6. Features client-side AES-GCM-256 encryption, IPFS pinning, time-bound consent expiration, and an emergency ER break-glass protocol.
+* **Tech Stack:** Solidity, Ethereum/EVM, Hardhat, React 19, Ethers.js v6, IPFS, AES-GCM-256
+* **Repository:** [Patient-Consent-Management-System](https://github.com/VishnuSreeVidya/Patient-Consent-Management-System)
 
-### 2. Decentralized Voting Infrastructure
-An immutable smart contract deployment pattern designed to implement completely fraud-proof cryptographic voting procedures across private or public peer networks.
-* **Tech Stack:** Solidity, Remix IDE, Web3.js
+### 2. NodeTalk — Secure Real-Time Messaging Platform
+High-concurrency instant communication platform featuring real-time peer-to-peer messaging via WebSockets and Supabase Realtime, fortified with PostgreSQL Row-Level Security (RLS) and JWT authentication.
+* **Tech Stack:** React.js, Node.js, Express.js, PostgreSQL (Supabase), WebSockets, JWT, Tailwind CSS
+* **Repository:** [NodeTalk](https://github.com/VishnuSreeVidya/NodeTalk)
 
-### 3. Automated Code Submission Pipelines
-A scalable Java-driven runtime configuration optimizing algorithmic compilation queues. Features programmatic time-enforcement rules to securely evaluate repository payloads against specific metadata constraints.
-* **Tech Stack:** Spring Boot, Java, Maven
+### 3. CryptPact — End-to-End Encrypted Messaging Application
+Real-time messaging system featuring client-side end-to-end encryption protocols, secure REST APIs, and WebSocket channels for zero-exposure communication.
+* **Tech Stack:** React.js, Node.js, Express.js, MongoDB, WebSockets, JWT
+
+### 4. SafeLink — IoT-Based Emergency Response Wearable
+Hardware/software safety wearable system utilizing ESP32, ADXL345 accelerometer, and sound sensors to detect falls and SOS triggers, transmitting real-time GPS coordinates via Telegram Bot API.
+* **Tech Stack:** ESP32, Arduino IDE, TinyGPS, ADXL345, Telegram Bot API, Wi-Fi
+* **Repository:** [safe-link](https://github.com/VishnuSreeVidya/safe-link)
+
+### 5. EventNest — AI-Powered Venue Booking Platform
+Full-stack enterprise event venue booking engine with AI-driven pricing estimation, enquiry orchestration, and real-time dashboard state management.
+* **Tech Stack:** React.js, TanStack Start, Supabase, PostgreSQL, Tailwind CSS
+* **Repository:** [Eventnest](https://github.com/VishnuSreeVidya/Eventnest)
 
 ---
 
 ## 🔧 Local Workspace Setup
 
-To inspect or test the codebase configurations locally on your machine:
+To inspect or run the portfolio locally:
 
 1. **Clone the Repository:**
 ```bash
-   git clone [https://github.com/VishnuSreeVidya/vidya-portfolio.git](https://github.com/VishnuSreeVidya/vidya-portfolio.git)
+git clone https://github.com/VishnuSreeVidya/My-Portfolio.git
+```
+
+2. **Open the Project:**
+Simply open `index.html` in any modern web browser or serve with Live Server / http-server.

@@ -66,7 +66,7 @@
                     <span class="stat-label">Certifications</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">4</span>
+                    <span class="stat-number">5</span>
                     <span class="stat-label">Featured Projects</span>
                 </div>
                 <div class="stat-item">
@@ -150,6 +150,19 @@
                 </div>
             </div>
             <div class="glass-card skill-group-box scroll-reveal">
+                <h3><i class="fas fa-cubes"></i> Blockchain & Web3</h3>
+                <div class="skill-tags-flex">
+                    <span class="skill-capsule highlight-capsule">Solidity</span>
+                    <span class="skill-capsule">Ethereum / EVM</span>
+                    <span class="skill-capsule">Hardhat</span>
+                    <span class="skill-capsule">Ethers.js v6</span>
+                    <span class="skill-capsule">IPFS</span>
+                    <span class="skill-capsule">Smart Contracts</span>
+                    <span class="skill-capsule">MetaMask</span>
+                    <span class="skill-capsule">AES-GCM-256</span>
+                </div>
+            </div>
+            <div class="glass-card skill-group-box scroll-reveal">
                 <h3><i class="fas fa-database"></i> Databases</h3>
                 <div class="skill-tags-flex">
                     <span class="skill-capsule">MySQL</span>
@@ -207,15 +220,52 @@
 
         <div class="project-filter-bar scroll-reveal">
             <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="blockchain">Blockchain & Web3</button>
             <button class="filter-btn" data-filter="web">Full-Stack & Web</button>
             <button class="filter-btn" data-filter="security">Security & IoT</button>
         </div>
 
         <div class="portfolio-projects-grid">
+            <!-- Blockchain & Web3: PCMS -->
+            <div class="glass-card showcase-card scroll-reveal" data-category="blockchain web security">
+                <div class="project-card-header">
+                    <span class="project-badge">Blockchain & Web3</span>
+                    <div class="project-header-right">
+                        <a href="https://github.com/VishnuSreeVidya/Patient-Consent-Management-System" target="_blank" class="project-link-icon" title="View on GitHub" aria-label="GitHub Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <i class="fas fa-cubes project-card-icon"></i>
+                    </div>
+                </div>
+                <h3>Decentralized Patient Consent Management System</h3>
+                <p class="project-subtitle">Enterprise-Grade Web3 EHR Access Control & Consent Platform</p>
+                <ul class="project-bullet-list">
+                    <li>Engineered an enterprise-grade decentralized Electronic Health Record (EHR) access control platform using Solidity smart contracts (<code>PatientConsent.sol</code>), Hardhat, React 19, and Ethers.js v6.</li>
+                    <li>Implemented client-side zero-knowledge data confidentiality using AES-GCM 256-bit encryption and PBKDF2 key derivation prior to decentralized IPFS pinning.</li>
+                    <li>Designed fine-grained categorical permissions (General, Prescriptions, Lab Tests, Radiology, Sensitive) with smart contract time-bound validity and automated expiration.</li>
+                    <li>Architected an emergency ER "Break-Glass" protocol with mandatory clinical justification, creating an immutable on-chain forensic audit trail and instant ER alert notifications.</li>
+                </ul>
+                <div class="project-tech-tags">
+                    <span class="tech-capsule">Solidity</span>
+                    <span class="tech-capsule">Ethereum / EVM</span>
+                    <span class="tech-capsule">Hardhat</span>
+                    <span class="tech-capsule">React 19</span>
+                    <span class="tech-capsule">Ethers.js v6</span>
+                    <span class="tech-capsule">IPFS</span>
+                    <span class="tech-capsule">AES-GCM-256</span>
+                    <span class="tech-capsule">MetaMask</span>
+                </div>
+            </div>
+
             <div class="glass-card showcase-card scroll-reveal" data-category="web">
                 <div class="project-card-header">
                     <span class="project-badge">Real-Time Messaging</span>
-                    <i class="fas fa-comments project-card-icon"></i>
+                    <div class="project-header-right">
+                        <a href="https://github.com/VishnuSreeVidya/NodeTalk" target="_blank" class="project-link-icon" title="View on GitHub" aria-label="GitHub Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <i class="fas fa-comments project-card-icon"></i>
+                    </div>
                 </div>
                 <h3>NodeTalk</h3>
                 <p class="project-subtitle">Secure Real-Time Messaging Platform</p>
@@ -239,7 +289,12 @@
             <div class="glass-card showcase-card scroll-reveal" data-category="web security">
                 <div class="project-card-header">
                     <span class="project-badge">Full-Stack Encrypted App</span>
-                    <i class="fas fa-lock project-card-icon"></i>
+                    <div class="project-header-right">
+                        <a href="https://github.com/VishnuSreeVidya" target="_blank" class="project-link-icon" title="View on GitHub" aria-label="GitHub Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <i class="fas fa-lock project-card-icon"></i>
+                    </div>
                 </div>
                 <h3>CryptPact</h3>
                 <p class="project-subtitle">End-to-End Encrypted Real-Time Messaging Application</p>
@@ -262,7 +317,12 @@
             <div class="glass-card showcase-card scroll-reveal" data-category="security">
                 <div class="project-card-header">
                     <span class="project-badge">IoT Emergency Response</span>
-                    <i class="fas fa-microchip project-card-icon"></i>
+                    <div class="project-header-right">
+                        <a href="https://github.com/VishnuSreeVidya/safe-link" target="_blank" class="project-link-icon" title="View on GitHub" aria-label="GitHub Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <i class="fas fa-microchip project-card-icon"></i>
+                    </div>
                 </div>
                 <h3>SafeLink</h3>
                 <p class="project-subtitle">IoT-Based Emergency Response Wearable</p>
@@ -285,7 +345,12 @@
             <div class="glass-card showcase-card scroll-reveal" data-category="web">
                 <div class="project-card-header">
                     <span class="project-badge">AI Venue Platform</span>
-                    <i class="fas fa-calendar-check project-card-icon"></i>
+                    <div class="project-header-right">
+                        <a href="https://github.com/VishnuSreeVidya/Eventnest" target="_blank" class="project-link-icon" title="View on GitHub" aria-label="GitHub Repository">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <i class="fas fa-calendar-check project-card-icon"></i>
+                    </div>
                 </div>
                 <h3>EventNest</h3>
                 <p class="project-subtitle">AI-Powered Venue Booking Platform</p>
