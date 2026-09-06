@@ -619,15 +619,18 @@ body::after {
 }
 
 .projects-horizontal-track {
-    display: flex;
-    gap: 24px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding: 12px 6px 20px 6px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 24px !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory !important;
+    padding: 12px 6px 24px 6px !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
     cursor: grab;
     user-select: none;
+    width: 100% !important;
 }
 
 .projects-horizontal-track:active {
@@ -640,21 +643,24 @@ body::after {
 
 /* --- Compact Modern Horizontal Card --- */
 .project-compact-card {
-    flex: 0 0 360px;
-    min-width: 330px;
-    max-width: 380px;
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 28px;
-    cursor: pointer;
+    flex: 0 0 360px !important;
+    width: 360px !important;
+    min-width: 320px !important;
+    max-width: 380px !important;
+    flex-shrink: 0 !important;
+    scroll-snap-align: start !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 28px !important;
+    cursor: pointer !important;
     transition: all 0.4s var(--transition-smooth);
-    border: 1px solid var(--border-subtle);
-    background: var(--bg-card);
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
+    border: 1px solid var(--border-subtle) !important;
+    background: var(--bg-card) !important;
+    border-radius: 20px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
 }
 
 .project-compact-card.filtered-out {
@@ -1178,10 +1184,25 @@ body::after {
 
 @media (max-width: 768px) {
     .project-compact-card {
-        flex: 0 0 290px;
-        min-width: 280px;
-        padding: 22px;
-    }
+    flex: 0 0 360px !important;
+    width: 360px !important;
+    min-width: 320px !important;
+    max-width: 380px !important;
+    flex-shrink: 0 !important;
+    scroll-snap-align: start !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 28px !important;
+    cursor: pointer !important;
+    transition: all 0.4s var(--transition-smooth);
+    border: 1px solid var(--border-subtle) !important;
+    background: var(--bg-card) !important;
+    border-radius: 20px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
     .modal-content-scroller {
         padding: 24px;
     }
@@ -1192,9 +1213,25 @@ body::after {
 
 @media (max-width: 480px) {
     .project-compact-card {
-        flex: 0 0 85vw;
-        min-width: 85vw;
-    }
+    flex: 0 0 360px !important;
+    width: 360px !important;
+    min-width: 320px !important;
+    max-width: 380px !important;
+    flex-shrink: 0 !important;
+    scroll-snap-align: start !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding: 28px !important;
+    cursor: pointer !important;
+    transition: all 0.4s var(--transition-smooth);
+    border: 1px solid var(--border-subtle) !important;
+    background: var(--bg-card) !important;
+    border-radius: 20px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
     .modal-close-trigger {
         top: 14px;
         right: 14px;
