@@ -51,9 +51,9 @@ Hardware/software safety wearable system utilizing ESP32, ADXL345 accelerometer,
 * **Tech Stack:** ESP32, Arduino IDE, TinyGPS, ADXL345, Telegram Bot API, Wi-Fi
 * **Repository:** [safe-link](https://github.com/VishnuSreeVidya/safe-link)
 
-### 6. EventNest — AI-Powered Venue Booking Platform
-Full-stack enterprise event venue booking engine with AI-driven pricing estimation, enquiry orchestration, and real-time dashboard state management.
-* **Tech Stack:** React.js, TanStack Start, Supabase, PostgreSQL, Tailwind CSS
+### 6. EventNest — Premier Function Hall & Convention Discovery Engine
+Enterprise-grade venue discovery platform featuring 4-way side-by-side spec comparison, live cost estimation with 18% GST calculation, official quote sheet generation (#EN-QT-XXXXXX), visual availability calendar slot locking, and an AI event concierge with dynamic budget allocation breakdown bars.
+* **Tech Stack:** React 19, Vite, Node.js, Express, Socket.io, Redux Toolkit, Framer Motion, Tailwind CSS, PostgreSQL
 * **Repository:** [Eventnest](https://github.com/VishnuSreeVidya/Eventnest)
 
 ---
